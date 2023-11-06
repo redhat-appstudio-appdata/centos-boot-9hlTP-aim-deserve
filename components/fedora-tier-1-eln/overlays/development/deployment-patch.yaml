@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fedora-tier-1-eln
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/project-sagano-tenant/centos-boot/fedora-tier-1-eln@sha256:494ad64ff6782c067c8cc6aaccc5779a6cfbeb9d73f064fad1c56205a02b024f
+        name: container-image
+        resources: {}
+status: {}
